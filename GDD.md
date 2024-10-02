@@ -143,9 +143,8 @@ Utilizando este modelo, construimos nuestra empresa en base a una serie de bloqu
 
 ## Modelo de canvas o lienzo
 Gracias al modelo de lienzo, podemos representar nuetra infraestructura orientada al producto de Space Combat Rush 3D de manera más detallada. Ello se puede visualizar en la siguiente representación gráfica:
-
 <p align="center">
- <img width=1000 heigth=1000 src="https://github.com/jagonmes/Imagenes-JeR/blob/main/CanvasTemporal.png"> <br>
+ <img width=1000 heigth=1000 src="https://github.com/jagonmes/Imagenes-JeR/blob/main/ModeloLienzo.png"> <br>
 </p>
 
 ## Modelo de monetización
