@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class UI : NetworkBehaviour
 {
+    [SerializeField] private bool ActivarUI = true;
+    
     [SerializeField]private GameObject LogIn;
     [SerializeField]private GameObject Personalizacion;
     [SerializeField]private GameObject BuscandoPartida;
@@ -12,11 +14,13 @@ public class UI : NetworkBehaviour
     [SerializeField]private GameObject Derrota;
     [SerializeField]private GameObject Creditos;
     
+    
     void Start()
     {
         //SI ES EL DUEÑO, SE ACTIVA LA PANTALLA DE LOGIN
         if (IsOwner)
-            LogIn.SetActive(true);
+            if(ActivarUI)
+                LogIn.SetActive(true);
     }
 
     //TODAS ESTAS FUNCIONES NECESITAN MÁS FUNCIONALIDAD, ESTO ES UN PLACEHOLDER

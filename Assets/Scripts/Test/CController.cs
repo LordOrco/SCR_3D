@@ -8,6 +8,7 @@ public class CController : MonoBehaviour
     
     private CharacterController controller;
     private Vector3 direccion = new Vector3(0f,0f, 0f);
+    [SerializeField] private Transform CameraPosition;
 
     public float speed = 5f;
     
@@ -36,7 +37,7 @@ public class CController : MonoBehaviour
     {
         Debug.Log("Busca la camara");
         CinemachineVirtualCamera VC = FindObjectOfType<CinemachineVirtualCamera>();
-        VC.Follow = this.transform;
+        VC.Follow = CameraPosition;
         VC.LookAt = this.transform;
     }
 }
